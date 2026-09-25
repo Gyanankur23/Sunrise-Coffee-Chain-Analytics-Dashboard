@@ -1,0 +1,61 @@
+store_id,store_name,store_format,location_type,city,region,monthly_rent_gbp,staff_headcount,monthly_staffing_cost_gbp,loyalty_adoption_rate,seating_capacity,opening_year,store_status
+1,Sunrise Coffee Sunderland Station,High-Street,Suburban-High-Street,Sunderland,North-East,5862.37,15,17544.21,0.312,30,2017,Active
+2,Sunrise Coffee Bradford Yard,High-Street,Shopping-Centre,Bradford,Yorkshire-and-Humber,6369.05,10,18928.65,0.263,42,2013,Active
+3,Sunrise Coffee Newport Yard,High-Street,Shopping-Centre,Newport,Wales,5750.48,12,19156.48,0.416,22,2013,Active
+4,Sunrise Coffee Chester Brew Bar,High-Street,Suburban-High-Street,Chester,North-West,5222.24,11,23979.77,0.418,51,2021,Active
+5,Sunrise Coffee Canary Wharf Quarter,High-Street,City-Centre,Canary Wharf,London,12651.01,13,20844.91,0.217,35,2014,Active
+6,Sunrise Coffee Derry Station,High-Street,Suburban-High-Street,Derry,Northern-Ireland,4251.3,8,13466.85,0.082,45,2022,Active
+7,Sunrise Coffee Swansea Hub,High-Street,Suburban-High-Street,Swansea,Wales,4201.85,12,20502.36,0.274,45,2014,Active
+8,Sunrise Coffee Lincoln Express,High-Street,City-Centre,Lincoln,East-Midlands,4889.22,8,19947.89,0.139,40,2023,Active
+9,Sunrise Coffee Luton Express,Transport-Hub,Train-Station,Luton,East-of-England,7197.69,11,16306.81,0.397,19,2023,Active
+10,Sunrise Coffee Leeds Roastery,High-Street,City-Centre,Leeds,Yorkshire-and-Humber,3904.41,13,14378.08,0.196,55,2013,Active
+11,Sunrise Coffee Cambridge Brew Bar,High-Street,City-Centre,Cambridge,East-of-England,4319.49,11,14199.91,0.546,50,2019,Active
+12,Sunrise Coffee Cardiff Corner,High-Street,City-Centre,Cardiff,Wales,5132.83,10,12215.77,0.467,33,2019,Active
+13,Sunrise Coffee Norwich Station,High-Street,Suburban-High-Street,Norwich,East-of-England,8883.2,11,13906.01,0.279,42,2012,Active
+14,Sunrise Coffee Oxford Lounge,High-Street,City-Centre,Oxford,South-East,8892.18,16,13244.95,0.144,28,2023,Active
+15,Sunrise Coffee West London Quarter,High-Street,City-Centre,West London,London,14540.6,11,12116.77,0.315,43,2010,Active
+16,Sunrise Coffee Middlesbrough Roastery,High-Street,Shopping-Centre,Middlesbrough,North-East,9079.41,13,14041.85,0.31,43,2023,Active
+17,Sunrise Coffee Sheffield Hub,High-Street,City-Centre,Sheffield,Yorkshire-and-Humber,4520.65,11,22263.92,0.543,38,2014,Active
+18,Sunrise Coffee Nottingham Quarter,High-Street,City-Centre,Nottingham,East-Midlands,4721.91,11,25071.72,0.473,51,2018,Active
+19,Sunrise Coffee Manchester Collective,High-Street,City-Centre,Manchester,North-West,4569.77,9,26513.88,0.506,50,2023,Temporarily-Closed
+20,Sunrise Coffee Guildford Hub,High-Street,City-Centre,Guildford,South-East,8962.38,11,17836.95,0.565,45,2017,Active
+21,Sunrise Coffee Birmingham Roastery,High-Street,City-Centre,Birmingham,West-Midlands,3699.71,12,24316.37,0.54,38,2011,Active
+22,Sunrise Coffee Derby Lounge,High-Street,Suburban-High-Street,Derby,East-Midlands,5851.01,10,22425.15,0.102,58,2015,Active
+23,Sunrise Coffee Edinburgh Corner,High-Street,City-Centre,Edinburgh,Scotland,3474.13,16,24894.66,0.134,35,2015,Active
+24,Sunrise Coffee Cheltenham Quarter,High-Street,Suburban-High-Street,Cheltenham,South-West,9310.76,9,20573.31,0.585,39,2016,Active
+25,Sunrise Coffee Glasgow Express,High-Street,City-Centre,Glasgow,Scotland,8192.72,12,20575.76,0.117,39,2022,Active
+26,Sunrise Coffee Wolverhampton Yard,High-Street,Suburban-High-Street,Wolverhampton,West-Midlands,4419.33,10,21663.61,0.456,40,2016,Active
+27,Sunrise Coffee Plymouth Express,High-Street,Shopping-Centre,Plymouth,South-West,5531.66,11,22011.03,0.415,56,2017,Active
+28,Sunrise Coffee Hull Hub,High-Street,Suburban-High-Street,Hull,Yorkshire-and-Humber,5141.83,12,18706.29,0.108,41,2020,Temporarily-Closed
+29,Sunrise Coffee Dundee Station,High-Street,Shopping-Centre,Dundee,Scotland,8990.64,9,16850.47,0.307,32,2021,Active
+30,Sunrise Coffee Coventry Roastery,High-Street,Shopping-Centre,Coventry,West-Midlands,4687.65,10,9410.84,0.342,27,2023,Active
+31,Sunrise Coffee Southampton House,High-Street,City-Centre,Southampton,South-East,6676.4,9,17622.95,0.527,22,2017,Active
+32,Sunrise Coffee South London Corner,High-Street,City-Centre,South London,London,7612.86,17,29620.27,0.087,35,2015,Active
+33,Sunrise Coffee Aberdeen Express,High-Street,Suburban-High-Street,Aberdeen,Scotland,4122.34,11,21109.35,0.141,35,2018,Active
+34,Sunrise Coffee Brighton Express,High-Street,Suburban-High-Street,Brighton,South-East,7404.57,11,18928.68,0.079,45,2017,Active
+35,Sunrise Coffee Canterbury Yard,High-Street,Suburban-High-Street,Canterbury,South-East,8879.39,12,18000.34,0.518,43,2016,Active
+36,Sunrise Coffee Leicester Express,High-Street,Shopping-Centre,Leicester,East-Midlands,8849.07,16,19543.39,0.077,26,2011,Active
+37,Sunrise Coffee Ipswich House,High-Street,Shopping-Centre,Ipswich,East-of-England,6864.26,6,21709.75,0.546,26,2014,Active
+38,Sunrise Coffee Preston Brew Bar,High-Street,Shopping-Centre,Preston,North-West,6604.93,11,17586.05,0.345,41,2023,Active
+39,Sunrise Coffee Central London House,High-Street,City-Centre,Central London,London,11052.6,12,19183.98,0.127,18,2012,Active
+40,Sunrise Coffee Bristol Station,High-Street,City-Centre,Bristol,South-West,3432.28,14,16685.9,0.259,27,2013,Active
+41,Sunrise Coffee Bath Hub,High-Street,City-Centre,Bath,South-West,7665.31,17,22709.65,0.344,60,2016,Active
+42,Sunrise Coffee Belfast Yard,High-Street,City-Centre,Belfast,Northern-Ireland,4114.46,12,15210.3,0.454,25,2018,Active
+43,Sunrise Coffee North London Yard,High-Street,City-Centre,North London,London,12281.59,15,21003.48,0.449,48,2017,Active
+44,Sunrise Coffee Newcastle Collective,High-Street,City-Centre,Newcastle,North-East,3359.19,10,24044.91,0.48,31,2023,Active
+45,Sunrise Coffee Liverpool Collective,High-Street,City-Centre,Liverpool,North-West,4066.88,9,19248.04,0.361,47,2016,Active
+46,Sunrise Coffee East London Lounge,High-Street,City-Centre,East London,London,12288.13,13,24464.84,0.38,32,2021,Active
+47,Sunrise Coffee Exeter Express,High-Street,City-Centre,Exeter,South-West,9451.9,13,21386.34,0.476,49,2020,Active
+48,Sunrise Coffee Reading Hub,High-Street,Shopping-Centre,Reading,South-East,8586.0,12,14546.62,0.223,38,2023,Active
+49,Sunrise Coffee Sunderland Express,High-Street,Suburban-High-Street,Sunderland,North-East,3518.05,11,23925.82,0.354,30,2015,Active
+50,Sunrise Coffee Bradford Brew Bar,High-Street,Shopping-Centre,Bradford,Yorkshire-and-Humber,5518.28,15,21427.18,0.573,46,2013,Active
+51,Sunrise Coffee Newport House,High-Street,Shopping-Centre,Newport,Wales,2200.0,16,16169.2,0.057,55,2020,Active
+52,Sunrise Coffee Chester House,High-Street,Suburban-High-Street,Chester,North-West,3297.44,9,19758.55,0.555,43,2017,Refurbishing
+53,Sunrise Coffee Canary Wharf Express,High-Street,City-Centre,Canary Wharf,London,12217.41,10,19837.54,0.109,41,2018,Active
+54,Sunrise Coffee Derry Roastery,High-Street,Suburban-High-Street,Derry,Northern-Ireland,5189.08,9,17281.55,0.477,49,2010,Active
+55,Sunrise Coffee Swansea Collective,High-Street,Suburban-High-Street,Swansea,Wales,4427.83,11,21318.08,0.383,24,2023,Active
+56,Sunrise Coffee Lincoln Corner,High-Street,City-Centre,Lincoln,East-Midlands,4414.78,14,16860.46,0.475,53,2021,Active
+57,Sunrise Coffee Luton House,Transport-Hub,Train-Station,Luton,East-of-England,4614.98,16,18368.51,0.518,32,2021,Active
+58,Sunrise Coffee Leeds Brew Bar,High-Street,City-Centre,Leeds,Yorkshire-and-Humber,4927.17,14,24883.08,0.386,44,2010,Active
+59,Sunrise Coffee Cambridge Quarter,High-Street,City-Centre,Cambridge,East-of-England,5764.04,6,21713.19,0.1,33,2015,Active
+60,Sunrise Coffee Cardiff Collective,High-Street,City-Centre,Cardiff,Wales,5399.05,11,19314.65,0.13,55,2017,Active
