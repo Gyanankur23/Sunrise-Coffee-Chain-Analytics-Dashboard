@@ -25,9 +25,9 @@ export default function Sidebar() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <aside className="w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 flex flex-col">
-      <div className="p-6 border-b border-gray-200 dark:border-gray-700">
-        <h1 className="text-xl font-bold text-coffee-800 dark:text-coffee-200">
+    <aside className="w-64 bg-white dark:bg-coffee-900 border-r border-coffee-200 dark:border-coffee-800 flex flex-col">
+      <div className="p-6 border-b border-coffee-200 dark:border-coffee-800">
+        <h1 className="text-xl font-bold text-coffee-600 dark:text-coffee-400">
           Sunrise Coffee
         </h1>
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
@@ -46,8 +46,8 @@ export default function Sidebar() {
               to={item.path}
               className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
                 isActive
-                  ? 'bg-coffee-100 dark:bg-coffee-900 text-coffee-800 dark:text-coffee-200'
-                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                  ? 'bg-coffee-100 dark:bg-coffee-800 text-coffee-600 dark:text-coffee-400'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-coffee-50 dark:hover:bg-coffee-800'
               }`}
             >
               <Icon className="w-5 h-5" />
@@ -57,10 +57,10 @@ export default function Sidebar() {
         })}
       </nav>
 
-      <div className="p-4 border-t border-gray-200 dark:border-gray-700">
+      <div className="p-4 border-t border-coffee-200 dark:border-coffee-800">
         <button
           onClick={toggleTheme}
-          className="flex items-center gap-3 px-4 py-3 w-full rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          className="flex items-center gap-3 px-4 py-3 w-full rounded-lg text-gray-700 dark:text-gray-300 hover:bg-coffee-50 dark:hover:bg-coffee-800 transition-colors"
         >
           {theme === 'dark' ? (
             <Sun className="w-5 h-5" />

@@ -1,6 +1,23 @@
 import { useData } from '../hooks/useData';
 import { formatCurrency, formatPercentage, formatNumber } from '../utils/cn';
 import { motion } from 'framer-motion';
+import {
+  BarChart,
+  Bar,
+  LineChart,
+  Line,
+  PieChart,
+  Pie,
+  Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from 'recharts';
+
+const COLORS = ['#c48b5c', '#f97316', '#eab308', '#22c55e', '#3b82f6', '#8b5cf6'];
 
 export default function ExecutiveOverview() {
   const { data, isLoading, error } = useData();
@@ -9,10 +26,10 @@ export default function ExecutiveOverview() {
     return (
       <div className="p-8">
         <div className="animate-pulse space-y-4">
-          <div className="h-8 bg-gray-200 dark:bg-gray-700 rounded w-1/3"></div>
+          <div className="h-8 bg-coffee-200 dark:bg-coffee-800 rounded w-1/3"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="h-32 bg-gray-200 dark:bg-gray-700 rounded"></div>
+              <div key={i} className="h-32 bg-coffee-200 dark:bg-coffee-800 rounded"></div>
             ))}
           </div>
         </div>
@@ -37,6 +54,26 @@ export default function ExecutiveOverview() {
   const kpis = data.transformer.getKPIs();
   const seasonalPatterns = data.transformer.getSeasonalPatterns();
   const formatData = data.transformer.getDataByFormat();
+
+  // Prepare chart data
+  const formatChartData = Object.entries(formatData).map(([format, data]: [string, any]) => ({
+    name: format,
+    revenue: data.totalRevenue,
+    profit: data.totalProfit,
+    margin: data.avgMargin,
+    stores: data.storeCount,
+  }));
+
+  const seasonalChartData = seasonalPatterns.map((pattern) => ({
+    name: pattern.period,
+    revenue: pattern.revenue,
+    profit: pattern.profit,
+  }));
+
+  const pieData = Object.entries(formatData).map(([format, data]: [string, any]) => ({
+    name: format,
+    value: data.totalRevenue,
+  }));
 
   return (
     <div className="p-8">
@@ -65,7 +102,7 @@ export default function ExecutiveOverview() {
               <h3 className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
                 {kpi.label}
               </h3>
-              <p className="text-3xl font-bold text-gray-900 dark:text-gray-100">
+              <p className="text-3xl font-bold text-coffee-600 dark:text-coffee-400">
                 {kpi.format === 'currency' && formatCurrency(Number(kpi.value))}
                 {kpi.format === 'percentage' && formatPercentage(Number(kpi.value))}
                 {kpi.format === 'number' && formatNumber(Number(kpi.value))}
@@ -75,65 +112,104 @@ export default function ExecutiveOverview() {
           ))}
         </div>
 
-        {/* Format Performance */}
+        {/* Format Performance Bar Chart */}
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Performance by Store Format
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {Object.entries(formatData).map(([format, data]: [string, any]) => (
-              <div key={format} className="card p-6">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                  {format}
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-400">Stores</span>
-                    <span className="font-semibold">{data.storeCount}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-400">Total Revenue</span>
-                    <span className="font-semibold">{formatCurrency(data.totalRevenue)}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-400">Total Profit</span>
-                    <span className="font-semibold">{formatCurrency(data.totalProfit)}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-400">Avg Margin</span>
-                    <span className="font-semibold">{formatPercentage(data.avgMargin)}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="card p-6">
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart data={formatChartData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
+                <XAxis dataKey="name" stroke="#6c6c6c" />
+                <YAxis stroke="#6c6c6c" />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: '#fff',
+                    border: '1px solid #e8dcc9',
+                    borderRadius: '8px',
+                  }}
+                  formatter={(value: any) => value ? formatCurrency(value) : ''}
+                />
+                <Legend />
+                <Bar dataKey="revenue" fill="#c48b5c" name="Revenue" />
+                <Bar dataKey="profit" fill="#f97316" name="Profit" />
+              </BarChart>
+            </ResponsiveContainer>
           </div>
         </div>
 
-        {/* Seasonal Trends */}
-        <div>
+        {/* Monthly Revenue Line Chart */}
+        <div className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Monthly Revenue Trends
           </h2>
           <div className="card p-6">
-            <div className="h-64 flex items-end gap-2">
-              {seasonalPatterns.map((pattern) => (
-                <div
-                  key={pattern.period}
-                  className="flex-1 flex flex-col items-center gap-2"
+            <ResponsiveContainer width="100%" height={300}>
+              <LineChart data={seasonalChartData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
+                <XAxis dataKey="name" stroke="#6c6c6c" />
+                <YAxis stroke="#6c6c6c" />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: '#fff',
+                    border: '1px solid #e8dcc9',
+                    borderRadius: '8px',
+                  }}
+                  formatter={(value: any) => value ? formatCurrency(value) : ''}
+                />
+                <Legend />
+                <Line
+                  type="monotone"
+                  dataKey="revenue"
+                  stroke="#c48b5c"
+                  strokeWidth={2}
+                  name="Revenue"
+                />
+                <Line
+                  type="monotone"
+                  dataKey="profit"
+                  stroke="#f97316"
+                  strokeWidth={2}
+                  name="Profit"
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Revenue Distribution Pie Chart */}
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            Revenue Distribution by Format
+          </h2>
+          <div className="card p-6">
+            <ResponsiveContainer width="100%" height={300}>
+              <PieChart>
+                <Pie
+                  data={pieData}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  label={({ name, percent }) => `${name} ${percent ? (percent * 100).toFixed(0) : ''}%`}
+                  outerRadius={80}
+                  fill="#8884d8"
+                  dataKey="value"
                 >
-                  <div
-                    className="w-full bg-coffee-500 dark:bg-coffee-600 rounded-t transition-all hover:bg-coffee-600 dark:hover:bg-coffee-500"
-                    style={{
-                      height: `${(pattern.revenue / Math.max(...seasonalPatterns.map(p => p.revenue))) * 100}%`,
-                    }}
-                    title={`${formatCurrency(pattern.revenue)}`}
-                  />
-                  <span className="text-xs text-gray-600 dark:text-gray-400 rotate-45 origin-bottom-left">
-                    {pattern.period}
-                  </span>
-                </div>
-              ))}
-            </div>
+                  {pieData.map((_, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: '#fff',
+                    border: '1px solid #e8dcc9',
+                    borderRadius: '8px',
+                  }}
+                  formatter={(value: any) => value ? formatCurrency(value) : ''}
+                />
+              </PieChart>
+            </ResponsiveContainer>
           </div>
         </div>
       </motion.div>
