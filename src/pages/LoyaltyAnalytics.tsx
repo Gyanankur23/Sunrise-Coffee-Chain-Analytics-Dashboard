@@ -52,6 +52,13 @@ export default function LoyaltyAnalytics() {
   const totalMemberSpend = loyaltyMetrics.reduce((sum, m) => sum + m.member_spend, 0);
 
   // Prepare chart data
+  const scatterData = loyaltyMetrics.map((metrics) => ({
+    x: metrics.adoption_rate * 100,
+    y: metrics.member_revenue_pct * 100,
+    z: metrics.loyalty_net_value,
+    name: metrics.store_name,
+  }));
+
   const topPerformers = loyaltyMetrics
     .sort((a, b) => b.loyalty_net_value - a.loyalty_net_value)
     .slice(0, 10)
@@ -166,7 +173,7 @@ export default function LoyaltyAnalytics() {
                   }}
                 />
                 <Legend />
-                <Scatter fill="#c48b5c" name="Stores" />
+                <Scatter data={scatterData} fill="#c48b5c" name="Stores" />
               </ScatterChart>
             </ResponsiveContainer>
           </div>

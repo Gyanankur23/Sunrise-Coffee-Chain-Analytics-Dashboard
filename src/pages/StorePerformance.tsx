@@ -47,6 +47,12 @@ export default function StorePerformance() {
 
   // Prepare chart data
   const topStores = storePerformance.slice(0, 10);
+  const scatterData = storePerformance.map((store) => ({
+    x: store.avg_revenue_per_sqft,
+    y: store.avg_net_profit_margin,
+    z: store.total_revenue,
+    name: store.store_name,
+  }));
 
   return (
     <div className="p-8">
@@ -126,7 +132,7 @@ export default function StorePerformance() {
                   }}
                 />
                 <Legend />
-                <Scatter fill="#f97316" name="Stores" />
+                <Scatter data={scatterData} fill="#f97316" name="Stores" />
               </ScatterChart>
             </ResponsiveContainer>
           </div>
