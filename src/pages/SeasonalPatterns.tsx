@@ -88,16 +88,16 @@ export default function SeasonalPatterns() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-200 mb-2">
           Temporal and Seasonal Patterns
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-gray-600 dark:text-gray-300 mb-8">
           Analysis of trading patterns across time periods
         </p>
 
         {/* Monthly Trends Line Chart */}
         <div className="card p-6 mb-8">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-6">
             Monthly Revenue Trends (2023-2024)
           </h2>
           <ResponsiveContainer width="100%" height={400}>
@@ -136,7 +136,7 @@ export default function SeasonalPatterns() {
 
         {/* Quarterly Bar Chart */}
         <div className="card p-6 mb-8">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-6">
             Quarterly Performance Summary
           </h2>
           <ResponsiveContainer width="100%" height={400}>
@@ -165,7 +165,7 @@ export default function SeasonalPatterns() {
 
         {/* Quarterly Summary Table */}
         <div className="card p-6">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-6">
             Quarterly Detailed Metrics
           </h2>
           <div className="overflow-x-auto">
@@ -200,19 +200,19 @@ export default function SeasonalPatterns() {
                       transition={{ duration: 0.3, delay: index * 0.1 }}
                       className="hover:bg-coffee-50 dark:hover:bg-coffee-800 transition-colors"
                     >
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-200">
                         {quarter}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                         {formatCurrency(data.revenue)}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                         {formatCurrency(data.profit)}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                         {formatNumber(data.transactions)}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                         {formatNumber(Math.round(data.footfall))}
                       </td>
                     </motion.tr>

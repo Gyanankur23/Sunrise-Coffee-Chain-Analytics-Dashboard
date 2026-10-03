@@ -82,10 +82,10 @@ export default function ExecutiveOverview() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-200 mb-2">
           Executive Overview
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-gray-600 dark:text-gray-300 mb-8">
           Key performance indicators and trends for Sunrise Coffee Chain
         </p>
 
@@ -99,7 +99,7 @@ export default function ExecutiveOverview() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="card p-6"
             >
-              <h3 className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+              <h3 className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">
                 {kpi.label}
               </h3>
               <p className="text-3xl font-bold text-coffee-600 dark:text-coffee-400">
@@ -114,7 +114,7 @@ export default function ExecutiveOverview() {
 
         {/* Format Performance Bar Chart */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
             Performance by Store Format
           </h2>
           <div className="card p-6">
@@ -141,7 +141,7 @@ export default function ExecutiveOverview() {
 
         {/* Monthly Revenue Line Chart */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
             Monthly Revenue Trends
           </h2>
           <div className="card p-6">
@@ -180,7 +180,7 @@ export default function ExecutiveOverview() {
 
         {/* Revenue Distribution Pie Chart */}
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
             Revenue Distribution by Format
           </h2>
           <div className="card p-6">

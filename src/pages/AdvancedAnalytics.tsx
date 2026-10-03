@@ -66,10 +66,10 @@ export default function AdvancedAnalytics() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-200 mb-2">
           Advanced Analytics
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-gray-600 dark:text-gray-300 mb-8">
           Deep-dive analysis and correlations
         </p>
 
@@ -81,18 +81,18 @@ export default function AdvancedAnalytics() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="card p-6"
           >
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-4">
               Correlation Analysis
             </h2>
             <div className="space-y-4">
               <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
                   Adoption Rate vs Member Revenue %
                 </p>
-                <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                <p className="text-2xl font-bold text-gray-900 dark:text-gray-200">
                   {adoptionRevenueCorr.toFixed(3)}
                 </p>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                <p className="text-xs text-gray-500 dark:text-gray-300 mt-1">
                   {adoptionRevenueCorr > 0.5 ? 'Strong positive correlation' :
                    adoptionRevenueCorr > 0.3 ? 'Moderate positive correlation' :
                    adoptionRevenueCorr > -0.3 ? 'Weak correlation' :
@@ -102,13 +102,13 @@ export default function AdvancedAnalytics() {
               </div>
 
               <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
                   Adoption Rate vs Avg Transaction Value
                 </p>
-                <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                <p className="text-2xl font-bold text-gray-900 dark:text-gray-200">
                   {adoptionTransactionCorr.toFixed(3)}
                 </p>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                <p className="text-xs text-gray-500 dark:text-gray-300 mt-1">
                   {adoptionTransactionCorr > 0.5 ? 'Strong positive correlation' :
                    adoptionTransactionCorr > 0.3 ? 'Moderate positive correlation' :
                    adoptionTransactionCorr > -0.3 ? 'Weak correlation' :
@@ -125,7 +125,7 @@ export default function AdvancedAnalytics() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="card p-6"
           >
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-4">
               Regional Performance
             </h2>
             <div className="space-y-3 max-h-64 overflow-y-auto">
@@ -140,18 +140,18 @@ export default function AdvancedAnalytics() {
                     className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg"
                   >
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-gray-100">
+                      <p className="font-medium text-gray-900 dark:text-gray-200">
                         {region}
                       </p>
-                      <p className="text-xs text-gray-600 dark:text-gray-400">
+                      <p className="text-xs text-gray-600 dark:text-gray-300">
                         {data.storeCount} stores
                       </p>
                     </div>
                     <div className="text-right">
-                      <p className="font-semibold text-gray-900 dark:text-gray-100">
+                      <p className="font-semibold text-gray-900 dark:text-gray-200">
                         {formatCurrency(data.totalProfit)}
                       </p>
-                      <p className="text-xs text-gray-600 dark:text-gray-400">
+                      <p className="text-xs text-gray-600 dark:text-gray-300">
                         {formatPercentage(data.avgMargin)}
                       </p>
                     </div>
@@ -169,7 +169,7 @@ export default function AdvancedAnalytics() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="card p-6"
           >
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-4">
               Top 5 Performing Stores
             </h2>
             <div className="space-y-3">
@@ -179,18 +179,18 @@ export default function AdvancedAnalytics() {
                   className="flex items-center justify-between p-3 bg-green-50 dark:bg-green-900 rounded-lg"
                 >
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-gray-100">
+                    <p className="font-medium text-gray-900 dark:text-gray-200">
                       {index + 1}. {store.store_name}
                     </p>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">
+                    <p className="text-xs text-gray-600 dark:text-gray-300">
                       {store.format}
                     </p>
                   </div>
                   <div className="text-right">
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">
+                    <p className="font-semibold text-gray-900 dark:text-gray-200">
                       {formatCurrency(store.total_profit)}
                     </p>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">
+                    <p className="text-xs text-gray-600 dark:text-gray-300">
                       {formatPercentage(store.avg_net_profit_margin)}
                     </p>
                   </div>
@@ -205,7 +205,7 @@ export default function AdvancedAnalytics() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="card p-6"
           >
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-4">
               Bottom 5 Performing Stores
             </h2>
             <div className="space-y-3">
@@ -215,18 +215,18 @@ export default function AdvancedAnalytics() {
                   className="flex items-center justify-between p-3 bg-red-50 dark:bg-red-900 rounded-lg"
                 >
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-gray-100">
+                    <p className="font-medium text-gray-900 dark:text-gray-200">
                       {index + 1}. {store.store_name}
                     </p>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">
+                    <p className="text-xs text-gray-600 dark:text-gray-300">
                       {store.format}
                     </p>
                   </div>
                   <div className="text-right">
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">
+                    <p className="font-semibold text-gray-900 dark:text-gray-200">
                       {formatCurrency(store.total_profit)}
                     </p>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">
+                    <p className="text-xs text-gray-600 dark:text-gray-300">
                       {formatPercentage(store.avg_net_profit_margin)}
                     </p>
                   </div>

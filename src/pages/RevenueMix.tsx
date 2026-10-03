@@ -67,10 +67,10 @@ export default function RevenueMix() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-200 mb-2">
           Revenue Mix and Product Analytics
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-gray-600 dark:text-gray-300 mb-8">
           Analysis of revenue distribution across product categories
         </p>
 
@@ -82,7 +82,7 @@ export default function RevenueMix() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="card p-6"
           >
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-6">
               Revenue Distribution by Category
             </h2>
             <ResponsiveContainer width="100%" height={350}>
@@ -119,7 +119,7 @@ export default function RevenueMix() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="card p-6"
           >
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-6">
               Category Summary
             </h2>
             <div className="space-y-4">
@@ -132,18 +132,18 @@ export default function RevenueMix() {
                   className="flex items-center justify-between p-4 bg-coffee-50 dark:bg-coffee-800 rounded-lg"
                 >
                   <div>
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">
+                    <p className="font-semibold text-gray-900 dark:text-gray-200">
                       {item.category}
                     </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
                       {formatCurrency(item.revenue)}
                     </p>
                   </div>
                   <div className="text-right">
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">
+                    <p className="font-semibold text-gray-900 dark:text-gray-200">
                       {formatPercentage(item.percentage)}
                     </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
                       Margin: {formatPercentage(item.gross_margin_pct)}
                     </p>
                   </div>
@@ -155,7 +155,7 @@ export default function RevenueMix() {
 
         {/* Revenue and Margin Bar Chart */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
             Revenue and Margin by Category
           </h2>
           <div className="card p-6">
@@ -218,16 +218,16 @@ export default function RevenueMix() {
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     className="hover:bg-coffee-50 dark:hover:bg-coffee-800 transition-colors"
                   >
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-200">
                       {item.category}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatCurrency(item.revenue)}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatPercentage(item.percentage)}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatPercentage(item.gross_margin_pct)}
                     </td>
                   </motion.tr>

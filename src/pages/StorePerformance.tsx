@@ -61,16 +61,16 @@ export default function StorePerformance() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-200 mb-2">
           Store Performance Analysis
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-gray-600 dark:text-gray-300 mb-8">
           Detailed performance metrics for all stores
         </p>
 
         {/* Top 10 Stores Bar Chart */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
             Top 10 Stores by Profit
           </h2>
           <div className="card p-6">
@@ -96,7 +96,7 @@ export default function StorePerformance() {
 
         {/* Revenue vs Margin Scatter Chart */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
             Revenue per Sqft vs Profit Margin
           </h2>
           <div className="card p-6">
@@ -179,22 +179,22 @@ export default function StorePerformance() {
                     transition={{ duration: 0.3, delay: index * 0.02 }}
                     className="hover:bg-coffee-50 dark:hover:bg-coffee-800 transition-colors"
                   >
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-200">
                       {store.store_name}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">
                       {store.format}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">
                       {store.region}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatCurrency(store.total_revenue)}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatCurrency(store.total_profit)}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatPercentage(store.avg_net_profit_margin)}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-center">
@@ -206,7 +206,7 @@ export default function StorePerformance() {
                         {store.profitability_status}
                       </span>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {store.yoy_growth >= 0 ? '+' : ''}
                       {formatPercentage(store.yoy_growth)}
                     </td>

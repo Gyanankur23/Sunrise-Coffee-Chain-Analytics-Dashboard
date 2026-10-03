@@ -75,10 +75,10 @@ export default function LoyaltyAnalytics() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-200 mb-2">
           Loyalty Programme Analytics
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-gray-600 dark:text-gray-300 mb-8">
           Analysis of loyalty programme effectiveness and ROI
         </p>
 
@@ -90,13 +90,13 @@ export default function LoyaltyAnalytics() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="card p-6"
           >
-            <h3 className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+            <h3 className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">
               Total Net Value
             </h3>
             <p className="text-3xl font-bold text-coffee-600 dark:text-coffee-400">
               {formatCurrency(totalNetValue)}
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
               Member spend - Redemption cost
             </p>
           </motion.div>
@@ -107,13 +107,13 @@ export default function LoyaltyAnalytics() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="card p-6"
           >
-            <h3 className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+            <h3 className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">
               Total Member Spend
             </h3>
             <p className="text-3xl font-bold text-coffee-600 dark:text-coffee-400">
               {formatCurrency(totalMemberSpend)}
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
               Revenue from loyalty members
             </p>
           </motion.div>
@@ -124,13 +124,13 @@ export default function LoyaltyAnalytics() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="card p-6"
           >
-            <h3 className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+            <h3 className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">
               Total Redemption Cost
             </h3>
             <p className="text-3xl font-bold text-coffee-600 dark:text-coffee-400">
               {formatCurrency(totalRedemptionCost)}
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
               Cost of loyalty rewards
             </p>
           </motion.div>
@@ -138,7 +138,7 @@ export default function LoyaltyAnalytics() {
 
         {/* Adoption vs Revenue Scatter Chart */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
             Adoption Rate vs Member Revenue %
           </h2>
           <div className="card p-6">
@@ -181,7 +181,7 @@ export default function LoyaltyAnalytics() {
 
         {/* Top Performers Bar Chart */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
             Top 10 Stores by Loyalty Net Value
           </h2>
           <div className="card p-6">
@@ -208,7 +208,7 @@ export default function LoyaltyAnalytics() {
         {/* Store-Level Metrics */}
         <div className="card overflow-hidden">
           <div className="p-6 border-b border-coffee-200 dark:border-coffee-800">
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-200">
               Store-Level Loyalty Metrics
             </h2>
           </div>
@@ -242,16 +242,16 @@ export default function LoyaltyAnalytics() {
                     transition={{ duration: 0.3, delay: index * 0.02 }}
                     className="hover:bg-coffee-50 dark:hover:bg-coffee-800 transition-colors"
                   >
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-200">
                       {metrics.store_name}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatPercentage(metrics.adoption_rate * 100)}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatPercentage(metrics.member_revenue_pct * 100)}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-100">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-gray-900 dark:text-gray-200">
                       {formatCurrency(metrics.avg_transaction_value)}
                     </td>
                     <td className={`px-6 py-4 whitespace-nowrap text-sm text-right font-semibold ${
