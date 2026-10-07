@@ -162,9 +162,9 @@ export default function RevenueMix() {
             <ResponsiveContainer width="100%" height={400}>
               <BarChart data={barData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
-                <XAxis dataKey="name" stroke="#6c6c6c" />
-                <YAxis yAxisId="left" stroke="#6c6c6c" tickFormatter={(value) => formatCurrency(value)} />
-                <YAxis yAxisId="right" orientation="right" stroke="#6c6c6c" tickFormatter={(value) => formatPercentage(value)} />
+                <XAxis dataKey="name" stroke="#ffffff" />
+                <YAxis yAxisId="left" stroke="#ffffff" tickFormatter={(value) => formatCurrency(value)} />
+                <YAxis yAxisId="right" orientation="right" stroke="#ffffff" tickFormatter={(value) => formatPercentage(value)} />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: '#fff',

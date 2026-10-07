@@ -148,13 +148,13 @@ export default function LoyaltyAnalytics() {
                 <XAxis
                   dataKey="x"
                   name="Adoption Rate"
-                  stroke="#6c6c6c"
+                  stroke="#ffffff"
                   tickFormatter={(value) => formatPercentage(value)}
                 />
                 <YAxis
                   dataKey="y"
                   name="Member Revenue %"
-                  stroke="#6c6c6c"
+                  stroke="#ffffff"
                   tickFormatter={(value) => formatPercentage(value)}
                 />
                 <ZAxis dataKey="z" range={[50, 400]} />
@@ -188,8 +188,8 @@ export default function LoyaltyAnalytics() {
             <ResponsiveContainer width="100%" height={400}>
               <BarChart data={topPerformers} layout="vertical">
                 <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
-                <XAxis type="number" stroke="#6c6c6c" tickFormatter={(value) => formatCurrency(value)} />
-                <YAxis dataKey="name" type="category" width={150} stroke="#6c6c6c" />
+                <XAxis type="number" stroke="#ffffff" tickFormatter={(value) => formatCurrency(value)} />
+                <YAxis dataKey="name" type="category" width={150} stroke="#ffffff" />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: '#fff',

@@ -103,8 +103,8 @@ export default function SeasonalPatterns() {
           <ResponsiveContainer width="100%" height={400}>
             <LineChart data={monthlyChartData}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
-              <XAxis dataKey="name" stroke="#6c6c6c" />
-              <YAxis stroke="#6c6c6c" tickFormatter={(value) => formatCurrency(value)} />
+              <XAxis dataKey="name" stroke="#ffffff" />
+              <YAxis stroke="#ffffff" tickFormatter={(value) => formatCurrency(value)} />
               <Tooltip
                 contentStyle={{
                   backgroundColor: '#fff',
@@ -142,8 +142,8 @@ export default function SeasonalPatterns() {
           <ResponsiveContainer width="100%" height={400}>
             <BarChart data={quarterlyChartData}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
-              <XAxis dataKey="name" stroke="#6c6c6c" />
-              <YAxis stroke="#6c6c6c" tickFormatter={(value) => formatCurrency(value)} />
+              <XAxis dataKey="name" stroke="#ffffff" />
+              <YAxis stroke="#ffffff" tickFormatter={(value) => formatCurrency(value)} />
               <Tooltip
                 contentStyle={{
                   backgroundColor: '#fff',

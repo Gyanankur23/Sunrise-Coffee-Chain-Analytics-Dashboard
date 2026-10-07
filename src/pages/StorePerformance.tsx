@@ -77,8 +77,8 @@ export default function StorePerformance() {
             <ResponsiveContainer width="100%" height={400}>
               <BarChart data={topStores} layout="vertical">
                 <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
-                <XAxis type="number" stroke="#6c6c6c" />
-                <YAxis dataKey="store_name" type="category" width={150} stroke="#6c6c6c" />
+                <XAxis type="number" stroke="#ffffff" />
+                <YAxis dataKey="store_name" type="category" width={150} stroke="#ffffff" />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: '#fff',
@@ -106,13 +106,13 @@ export default function StorePerformance() {
                 <XAxis
                   dataKey="x"
                   name="Revenue per Sqft"
-                  stroke="#6c6c6c"
+                  stroke="#ffffff"
                   tickFormatter={(value) => formatCurrency(value)}
                 />
                 <YAxis
                   dataKey="y"
                   name="Profit Margin"
-                  stroke="#6c6c6c"
+                  stroke="#ffffff"
                   tickFormatter={(value) => formatPercentage(value)}
                 />
                 <ZAxis dataKey="z" range={[50, 400]} />
