@@ -111,7 +111,7 @@ export default function SeasonalPatterns() {
                   border: '1px solid #e8dcc9',
                   borderRadius: '8px',
                 }}
-                formatter={(value: number | undefined) => value ? formatCurrency(value) : ''}
+                formatter={(value: any) => value ? formatCurrency(value) : ''}
               />
               <Legend />
               <Line
@@ -150,7 +150,7 @@ export default function SeasonalPatterns() {
                   border: '1px solid #e8dcc9',
                   borderRadius: '8px',
                 }}
-                formatter={(value: number | undefined, name: string) => {
+                formatter={(value: any, name: any) => {
                   if (!value) return '';
                   if (name === 'Transactions' || name === 'Footfall') return formatNumber(value);
                   return formatCurrency(value);

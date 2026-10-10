@@ -107,7 +107,7 @@ export default function RevenueMix() {
                     border: '1px solid #e8dcc9',
                     borderRadius: '8px',
                   }}
-                  formatter={(value: number | undefined) => value ? formatCurrency(value) : ''}
+                  formatter={(value: any) => value ? formatCurrency(value) : ''}
                 />
               </PieChart>
             </ResponsiveContainer>
@@ -171,7 +171,7 @@ export default function RevenueMix() {
                     border: '1px solid #e8dcc9',
                     borderRadius: '8px',
                   }}
-                  formatter={(value: number | undefined, name: string) => {
+                  formatter={(value: any, name: any) => {
                     if (!value) return '';
                     if (name === 'Revenue') return formatCurrency(value);
                     if (name === 'Margin') return formatPercentage(value);
