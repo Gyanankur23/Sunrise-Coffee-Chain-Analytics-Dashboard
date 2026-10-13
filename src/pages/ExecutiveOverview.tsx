@@ -121,8 +121,8 @@ export default function ExecutiveOverview() {
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={formatChartData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
-                <XAxis dataKey="name" stroke="#ffffff" />
-                <YAxis stroke="#ffffff" />
+                <XAxis dataKey="name" stroke="var(--chart-axis-color)" />
+                <YAxis stroke="var(--chart-axis-color)" />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: '#fff',
@@ -148,8 +148,8 @@ export default function ExecutiveOverview() {
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={seasonalChartData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e8dcc9" />
-                <XAxis dataKey="name" stroke="#ffffff" />
-                <YAxis stroke="#ffffff" />
+                <XAxis dataKey="name" stroke="var(--chart-axis-color)" />
+                <YAxis stroke="var(--chart-axis-color)" />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: '#fff',

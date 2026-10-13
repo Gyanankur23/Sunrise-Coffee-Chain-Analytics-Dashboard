@@ -5,6 +5,11 @@
 @layer base {
   body {
     @apply bg-coffee-50 text-gray-900 dark:bg-coffee-950 dark:text-gray-200;
+    --chart-axis-color: #6c6c6c;
+  }
+  
+  .dark body {
+    --chart-axis-color: #ffffff;
   }
 }
 
