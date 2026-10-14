@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Playwright
+playwright-report/
+test-results/
+playwright.config.ts
+screenshots.spec.ts
+
+# Scripts
+redate.ps1
+redate.sh
