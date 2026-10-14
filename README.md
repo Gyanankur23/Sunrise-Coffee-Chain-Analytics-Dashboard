@@ -1,35 +1,32 @@
 # Sunrise Coffee Chain Analytics Dashboard
 
-<div align="center">
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)
-![React](https://img.shields.io/badge/React-19.2.8-61DAFB.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-6.0.2-3178C6.svg)
-
-*A comprehensive analytics dashboard for Sunrise Coffee Chain - UK-based coffee retailer*
-
-</div>
+**DataDNA October 2026 Challenge Submission**
 
 ---
 
-## Executive Summary
+## About This Submission
 
-The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the performance of 60 stores across the United Kingdom operating in three distinct formats: **High-Street**, **Retail-Park**, and **Transport-Hub**. Built with modern React technologies, this dashboard analyzes trading data from January 2023 to December 2024, enabling data-driven decision-making for store operations, marketing strategies, and expansion planning.
+This dashboard was created for the October 2026 DataDNA Sunrise Coffee Chain Analytics Challenge. It provides comprehensive insights into the performance of 60 stores across the United Kingdom operating in three distinct formats: High-Street, Retail-Park, and Transport-Hub.
+
+---
+
+## Dashboard Overview
+
+![Executive Overview](screenshots/executive-overview.png)
 
 ### Key Performance Highlights (2023-2024)
 
 | Metric | Value | Trend |
 |--------|-------|-------|
-| **Total Revenue** | £12.4M | +15.2% YoY |
-| **Net Profit Margin** | 18.7% | +2.3% YoY |
-| **Average Transaction Value** | £4.85 | +8.1% YoY |
-| **Loyalty Adoption Rate** | 34.2% | +12.5% YoY |
-| **Revenue per Sqft** | £287 | +5.8% YoY |
+| Total Revenue | £12.4M | +15.2% YoY |
+| Net Profit Margin | 18.7% | +2.3% YoY |
+| Average Transaction Value | £4.85 | +8.1% YoY |
+| Loyalty Adoption Rate | 34.2% | +12.5% YoY |
+| Revenue per Sqft | £287 | +5.8% YoY |
 
 ---
 
-## Dashboard Features
+## Dashboard Pages
 
 ### 1. Executive Overview
 ![Executive Overview](screenshots/executive-overview.png)
@@ -55,9 +52,9 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 - Year-over-year growth metrics by location
 
 **Notable Findings:**
-- Top performer: **Manchester Central** (Transport-Hub) - £847K annual profit
-- Bottom performer: **Bristol Riverside** (Retail-Park) - £124K annual profit
-- 47 stores classified as "Profitable", 13 as "Break-even"
+- Top performer: Manchester Central (Transport-Hub) - £847K annual profit
+- Bottom performer: Bristol Riverside (Retail-Park) - £124K annual profit
+- 47 stores classified as Profitable, 13 as Break-even
 
 ### 3. Loyalty Programme Analytics
 ![Loyalty Analytics](screenshots/loyalty-analytics.png)
@@ -128,16 +125,32 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
-| **React** | 19.2.8 | Frontend Framework |
-| **TypeScript** | 6.0.2 | Type Safety |
-| **Vite** | 8.3.0 | Build Tool |
-| **TanStack Query** | 5.104.2 | Server State Management |
-| **React Router** | 7.18.4 | Client-side Routing |
-| **Tailwind CSS** | 3.4.19 | Styling |
-| **Recharts** | 3.10.1 | Data Visualization |
-| **Framer Motion** | 14.2.0 | Animations |
-| **PapaParse** | 5.7.0 | CSV Parsing |
-| **D3.js** | 7.9.0 | Data Transformations |
+| React | 19.2.8 | Frontend Framework |
+| TypeScript | 6.0.2 | Type Safety |
+| Vite | 8.3.0 | Build Tool |
+| TanStack Query | 5.104.2 | Server State Management |
+| React Router | 7.18.4 | Client-side Routing |
+| Tailwind CSS | 3.4.19 | Styling |
+| Recharts | 3.10.1 | Data Visualization |
+| Framer Motion | 14.2.0 | Animations |
+| PapaParse | 5.7.0 | CSV Parsing |
+| D3.js | 7.9.0 | Data Transformations |
+
+---
+
+## Data Source
+
+The dashboard analyzes the DataDNA Sunrise Coffee Chain dataset:
+
+| Dataset Aspect | Details |
+|---------------|---------|
+| Stores | 60 locations across UK |
+| Formats | High-Street (35), Retail-Park (15), Transport-Hub (10) |
+| Products | 40 products across 6 categories |
+| Daily Sales Records | 10,000 records |
+| Monthly Profitability | 1,440 records |
+| Trading Period | January 2023 - December 2024 |
+| Regions | London, South East, North West, Scotland, Wales, Midlands |
 
 ---
 
@@ -172,122 +185,9 @@ The optimized production build will be created in the `dist` directory.
 
 ---
 
-## Project Structure
-
-```
-sunrise-coffee-dashboard/
-├── src/
-│   ├── components/          # Reusable UI components
-│   │   ├── Layout.tsx      # Main layout wrapper
-│   │   └── Sidebar.tsx     # Navigation sidebar
-│   ├── hooks/              # Custom React hooks
-│   │   ├── useData.ts      # Data fetching with React Query
-│   │   └── useTheme.ts     # Dark mode management
-│   ├── pages/              # Dashboard pages
-│   │   ├── ExecutiveOverview.tsx
-│   │   ├── StorePerformance.tsx
-│   │   ├── LoyaltyAnalytics.tsx
-│   │   ├── RevenueMix.tsx
-│   │   ├── SeasonalPatterns.tsx
-│   │   └── AdvancedAnalytics.tsx
-│   ├── services/           # Data processing
-│   │   ├── dataLoader.ts   # CSV file loading
-│   │   └── dataTransformer.ts  # Data transformation logic
-│   ├── utils/              # Utility functions
-│   │   └── cn.ts           # Class name utilities
-│   ├── App.tsx             # Root component
-│   └── index.css           # Global styles
-├── public/                 # Static assets
-│   └── data/               # CSV data files
-└── package.json
-```
-
----
-
-## Design System
-
-### Color Palette
-- **Coffee Theme**: Custom warm tones inspired by coffee culture
-- **Dark Mode**: Full support with high-contrast text for readability
-- **Responsive**: Optimized for desktop, tablet, and mobile viewing
-
-### UI Components
-- Custom card components with hover effects
-- Animated KPI counters
-- Interactive charts with tooltips and legends
-- Sortable data tables with pagination
-
----
-
-## Data Source
-
-The dashboard analyzes the **DataDNA Sunrise Coffee Chain dataset**:
-
-| Dataset Aspect | Details |
-|---------------|---------|
-| **Stores** | 60 locations across UK |
-| **Formats** | High-Street (35), Retail-Park (15), Transport-Hub (10) |
-| **Products** | 40 products across 6 categories |
-| **Daily Sales Records** | 10,000 records |
-| **Monthly Profitability** | 1,440 records |
-| **Trading Period** | January 2023 - December 2024 |
-| **Regions** | London, South East, North West, Scotland, Wales, Midlands |
-
----
-
-## Performance Optimizations
-
-- Client-side CSV parsing with efficient data transformation
-- Memoized computed fields to avoid redundant calculations
-- React Query caching for data persistence
-- Code splitting with React Router lazy loading
-- Optimized production build with tree shaking
-- Responsive chart rendering with Recharts
-
----
-
-## Browser Support
-
-| Browser | Version |
-|---------|---------|
-| Chrome | Latest |
-| Firefox | Latest |
-| Safari | Latest |
-| Edge | Latest |
-
----
-
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-```
-Copyright 2025 Gyanankur Baruah
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
-
----
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ---
 
@@ -295,14 +195,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 **Gyanankur Baruah**
 - GitHub: [@Gyanankur23](https://github.com/Gyanankur23)
-- Project: [Sunrise Coffee Chain Analytics Dashboard](https://github.com/Gyanankur23/Sunrise-Coffee-Chain-Analytics-Dashboard)
+- Email: gyanankur9@gmail.com
+- LinkedIn: [Gyanankur Baruah](https://linkedin.com/in/gyanankur23)
 
 ---
 
-<div align="center">
-
-**Built for Sunrise Coffee Chain**
-
-[Star this repo](https://github.com/Gyanankur23/Sunrise-Coffee-Chain-Analytics-Dashboard) • [Report Issue](https://github.com/Gyanankur23/Sunrise-Coffee-Chain-Analytics-Dashboard/issues)
-
-</div>
+**Submitted for DataDNA October 2026 Challenge**
