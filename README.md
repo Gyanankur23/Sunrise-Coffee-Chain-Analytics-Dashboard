@@ -4,83 +4,79 @@
 
 ---
 
-## About This Submission
+## Executive Summary
 
-This dashboard was created for the October 2026 DataDNA Sunrise Coffee Chain Analytics Challenge. It provides comprehensive insights into the performance of 60 stores across the United Kingdom operating in three distinct formats: High-Street, Retail-Park, and Transport-Hub.
+Delivering insights that move beyond visuals — this dashboard submission for the DataDNA Challenge focuses on **executive-level decision intelligence** for Sunrise Coffee Chain. The solution integrates multi-layered analytics designed for C-suite clarity, translating operational complexity into actionable intelligence that supports strategic planning, resource allocation, and growth forecasting.
 
----
+The model analyzes performance across 60 stores in the United Kingdom operating in three distinct formats: High-Street, Retail-Park, and Transport-Hub, with trading data spanning January 2023 to December 2024.
 
-## Dashboard Overview
+### Strategic Performance Indicators (2023-2024)
 
-![Executive Overview](screenshots/executive-overview.png)
-
-### Key Performance Highlights (2023-2024)
-
-| Metric | Value | Trend |
-|--------|-------|-------|
-| Total Revenue | £12.4M | +15.2% YoY |
-| Net Profit Margin | 18.7% | +2.3% YoY |
-| Average Transaction Value | £4.85 | +8.1% YoY |
-| Loyalty Adoption Rate | 34.2% | +12.5% YoY |
-| Revenue per Sqft | £287 | +5.8% YoY |
+| Metric | Value | YoY Trend |
+|--------|-------|-----------|
+| Total Revenue | £12.4M | +15.2% |
+| Net Profit Margin | 18.7% | +2.3% |
+| Average Transaction Value | £4.85 | +8.1% |
+| Loyalty Adoption Rate | 34.2% | +12.5% |
+| Revenue per Sqft | £287 | +5.8% |
 
 ---
 
-## Dashboard Pages
+## Analytics Framework
 
-### 1. Executive Overview
-![Executive Overview](screenshots/executive-overview.png)
+The dashboard integrates four core analytical dimensions:
 
-**Key Insights:**
-- Real-time KPI monitoring with animated counters
-- 24-month revenue and profit trend visualization
-- Format performance comparison showing Transport-Hub leading with 22% higher margins
-- Monthly revenue patterns revealing Q4 peak seasonality
+### 1. Revenue Segmentation Analysis
+**Executive Overview** | ![Executive Overview](screenshots/executive-overview.png)
 
-**Notable Findings:**
-- Transport-Hub stores achieve highest revenue per square foot (£312)
-- Retail-Park formats show strongest YoY growth (18.4%)
-- High-Street maintains consistent customer loyalty (38% adoption)
+- Multi-dimensional revenue segmentation across store formats and product categories
+- 24-month trend visualization identifying performance inflection points
+- Format-level profitability benchmarking (Transport-Hub: +22% margin premium)
+- Monthly revenue pattern analysis revealing Q4 seasonal acceleration
 
-### 2. Store Performance Analysis
-![Store Performance](screenshots/store-performance.png)
+**Strategic Intelligence:**
+- Transport-Hub format achieves £312 revenue per sqft (highest efficiency)
+- Retail-Park demonstrates strongest YoY growth trajectory (18.4%)
+- High-Street maintains superior customer loyalty retention (38% adoption)
 
-**Key Insights:**
-- Top 10 stores by profit with detailed breakdown
-- Revenue per Sqft vs Profit Margin scatter analysis
-- Store-level profitability status tracking
-- Year-over-year growth metrics by location
+### 2. Profitability Correlation Analysis
+**Store Performance** | ![Store Performance](screenshots/store-performance.png)
 
-**Notable Findings:**
-- Top performer: Manchester Central (Transport-Hub) - £847K annual profit
-- Bottom performer: Bristol Riverside (Retail-Park) - £124K annual profit
-- 47 stores classified as Profitable, 13 as Break-even
+- Revenue per Sqft vs Profit Margin scatter correlation analysis
+- Store-level profitability clustering and classification
+- Year-over-year growth metrics by geographic location
+- Top/bottom performer identification for targeted intervention
 
-### 3. Loyalty Programme Analytics
-![Loyalty Analytics](screenshots/loyalty-analytics.png)
+**Strategic Intelligence:**
+- Top performer: Manchester Central (Transport-Hub) — £847K annual profit
+- Bottom performer: Bristol Riverside (Retail-Park) — £124K annual profit
+- 47 stores classified as Profitable, 13 as Break-even (optimization opportunity)
 
-**Key Insights:**
-- Adoption rate vs member revenue correlation (r = 0.67)
-- Programme ROI calculation showing 3.2x return on investment
+### 3. Loyalty Engagement & Margin Efficiency
+**Loyalty Analytics** | ![Loyalty Analytics](screenshots/loyalty-analytics.png)
+
+- Adoption rate vs member revenue percentage correlation (r = 0.67)
+- Programme ROI quantification (3.2x return on investment)
 - Store-level loyalty metrics with redemption cost analysis
-- Member vs non-member spending comparison
+- Member vs non-member spending differential analysis
 
-**Notable Findings:**
+**Strategic Intelligence:**
 - Total Net Value: £2.1M (Member spend - Redemption cost)
-- Average member spend: £6.42 vs non-member: £4.21
+- Average member spend: £6.42 vs non-member: £4.21 (52% premium)
 - Highest adoption: London Oxford Street (52%)
 - Lowest adoption: Edinburgh Castle Street (18%)
 
-### 4. Revenue Mix & Product Analytics
-![Revenue Mix](screenshots/revenue-mix.png)
+### 4. Temporal Trend & Seasonal Analysis
+**Revenue Mix** | ![Revenue Mix](screenshots/revenue-mix.png)
 
-**Key Insights:**
-- Category revenue breakdown across 6 product categories
-- Gross margin analysis by product type
-- Format-specific revenue mix comparison
-- Revenue share vs margin contribution analysis
+**Seasonal Patterns** | ![Seasonal Patterns](screenshots/seasonal-patterns.png)
 
-**Notable Findings:**
+- Category revenue breakdown and gross margin analysis
+- Day-of-week performance pattern identification (Friday peak: +23%)
+- Monthly and quarterly trend visualization
+- Bank holiday impact quantification (+35% uplift)
+
+**Strategic Intelligence:**
 | Category | Revenue Share | Gross Margin |
 |----------|---------------|--------------|
 | Espresso | 28% | 72% |
@@ -90,51 +86,47 @@ This dashboard was created for the October 2026 DataDNA Sunrise Coffee Chain Ana
 | Retail Beans | 12% | 38% |
 | Merchandise | 5% | 42% |
 
-### 5. Temporal & Seasonal Patterns
-![Seasonal Patterns](screenshots/seasonal-patterns.png)
-
-**Key Insights:**
-- Day-of-week performance analysis (Friday peak: +23% above average)
-- Monthly and quarterly trend visualization
-- Year-over-year seasonal pattern comparison
-- Bank holiday impact quantification
-
-**Notable Findings:**
-- Peak trading months: November (+18%), December (+22%)
-- Slowest month: August (-12% below average)
-- Bank holidays generate +35% revenue uplift
+- Peak trading: November (+18%), December (+22%)
+- Slowest period: August (-12% below average)
 - Weekend vs weekday split: 42% vs 58%
 
-### 6. Advanced Analytics
-![Advanced Analytics](screenshots/advanced-analytics.png)
+### 5. Advanced KPI Regional Benchmarking
+**Advanced Analytics** | ![Advanced Analytics](screenshots/advanced-analytics.png)
 
-**Key Insights:**
-- Correlation analysis between key metrics
-- Regional performance comparison (North vs South)
-- Top and bottom performer identification
+- Cross-metric correlation analysis and statistical significance testing
+- Regional performance comparison (North vs South divide)
+- Advanced KPI clustering for store-level optimization
 - Data-driven strategic recommendations
 
-**Notable Findings:**
+**Strategic Intelligence:**
 - Strong correlation: Loyalty adoption ↔ Member revenue % (r = 0.67)
 - Regional leaders: South East (avg margin 21.3%), London (avg margin 20.8%)
 - Regional challenges: Scotland (avg margin 14.2%), Wales (avg margin 15.1%)
 
 ---
 
-## Technology Stack
+## Technical Implementation
 
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| React | 19.2.8 | Frontend Framework |
-| TypeScript | 6.0.2 | Type Safety |
-| Vite | 8.3.0 | Build Tool |
-| TanStack Query | 5.104.2 | Server State Management |
-| React Router | 7.18.4 | Client-side Routing |
-| Tailwind CSS | 3.4.19 | Styling |
-| Recharts | 3.10.1 | Data Visualization |
-| Framer Motion | 14.2.0 | Animations |
-| PapaParse | 5.7.0 | CSV Parsing |
-| D3.js | 7.9.0 | Data Transformations |
+The dashboard leverages a modern React-based architecture with TypeScript for type safety and performance optimization:
+
+| Technology | Purpose |
+|------------|---------|
+| React 19.2.8 | Frontend framework with concurrent rendering |
+| TypeScript 6.0.2 | Type safety and enhanced developer experience |
+| Vite 8.3.0 | Optimized build tooling and hot module replacement |
+| TanStack Query 5.104.2 | Server state management and caching |
+| React Router 7.18.4 | Client-side routing with lazy loading |
+| Tailwind CSS 3.4.19 | Utility-first styling with dark mode support |
+| Recharts 3.10.1 | Responsive data visualization library |
+| Framer Motion 14.2.0 | Production-ready animations |
+| PapaParse 5.7.0 | Efficient CSV parsing |
+| D3.js 7.9.0 | Advanced data transformations |
+
+**Design Philosophy:**
+- Dark mode optimized for executive presentation and stakeholder review
+- High-contrast text ensuring readability in presentation environments
+- Responsive layout supporting desktop, tablet, and mobile viewing
+- Performance-optimized with memoization and code splitting
 
 ---
 
@@ -200,4 +192,6 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ---
 
-**Submitted for DataDNA October 2026 Challenge**
+**DataDNA October 2026 Challenge Submission**
+
+#dataDNA #OnyxData #SmartFramesUI #DataCareerJumpstart #React #DataAnalytics #BusinessIntelligence #ExecutiveDashboards #DataVisualization #AnalyticsStrategy
