@@ -1,4 +1,4 @@
-# ☕ Sunrise Coffee Chain Analytics Dashboard
+# Sunrise Coffee Chain Analytics Dashboard
 
 <div align="center">
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 📊 Executive Summary
+## Executive Summary
 
 The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the performance of 60 stores across the United Kingdom operating in three distinct formats: **High-Street**, **Retail-Park**, and **Transport-Hub**. Built with modern React technologies, this dashboard analyzes trading data from January 2023 to December 2024, enabling data-driven decision-making for store operations, marketing strategies, and expansion planning.
 
@@ -21,18 +21,18 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 
 | Metric | Value | Trend |
 |--------|-------|-------|
-| **Total Revenue** | £12.4M | ↗️ +15.2% YoY |
-| **Net Profit Margin** | 18.7% | ↗️ +2.3% YoY |
-| **Average Transaction Value** | £4.85 | ↗️ +8.1% YoY |
-| **Loyalty Adoption Rate** | 34.2% | ↗️ +12.5% YoY |
-| **Revenue per Sqft** | £287 | ↗️ +5.8% YoY |
+| **Total Revenue** | £12.4M | +15.2% YoY |
+| **Net Profit Margin** | 18.7% | +2.3% YoY |
+| **Average Transaction Value** | £4.85 | +8.1% YoY |
+| **Loyalty Adoption Rate** | 34.2% | +12.5% YoY |
+| **Revenue per Sqft** | £287 | +5.8% YoY |
 
 ---
 
-## 🎯 Dashboard Features
+## Dashboard Features
 
 ### 1. Executive Overview
-![Executive Overview](public/executive-overview.png)
+![Executive Overview](screenshots/executive-overview.png)
 
 **Key Insights:**
 - Real-time KPI monitoring with animated counters
@@ -46,7 +46,7 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 - High-Street maintains consistent customer loyalty (38% adoption)
 
 ### 2. Store Performance Analysis
-![Store Performance](public/store-performance.png)
+![Store Performance](screenshots/store-performance.png)
 
 **Key Insights:**
 - Top 10 stores by profit with detailed breakdown
@@ -60,7 +60,7 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 - 47 stores classified as "Profitable", 13 as "Break-even"
 
 ### 3. Loyalty Programme Analytics
-![Loyalty Analytics](public/loyalty-analytics.png)
+![Loyalty Analytics](screenshots/loyalty-analytics.png)
 
 **Key Insights:**
 - Adoption rate vs member revenue correlation (r = 0.67)
@@ -75,7 +75,7 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 - Lowest adoption: Edinburgh Castle Street (18%)
 
 ### 4. Revenue Mix & Product Analytics
-![Revenue Mix](public/revenue-mix.png)
+![Revenue Mix](screenshots/revenue-mix.png)
 
 **Key Insights:**
 - Category revenue breakdown across 6 product categories
@@ -94,7 +94,7 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 | Merchandise | 5% | 42% |
 
 ### 5. Temporal & Seasonal Patterns
-![Seasonal Patterns](public/seasonal-patterns.png)
+![Seasonal Patterns](screenshots/seasonal-patterns.png)
 
 **Key Insights:**
 - Day-of-week performance analysis (Friday peak: +23% above average)
@@ -109,7 +109,7 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 - Weekend vs weekday split: 42% vs 58%
 
 ### 6. Advanced Analytics
-![Advanced Analytics](public/advanced-analytics.png)
+![Advanced Analytics](screenshots/advanced-analytics.png)
 
 **Key Insights:**
 - Correlation analysis between key metrics
@@ -124,7 +124,7 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 
 ---
 
-## 🛠 Technology Stack
+## Technology Stack
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
@@ -141,7 +141,7 @@ The Sunrise Coffee Chain Analytics Dashboard provides deep insights into the per
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -172,7 +172,7 @@ The optimized production build will be created in the `dist` directory.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 sunrise-coffee-dashboard/
@@ -204,7 +204,7 @@ sunrise-coffee-dashboard/
 
 ---
 
-## 🎨 Design System
+## Design System
 
 ### Color Palette
 - **Coffee Theme**: Custom warm tones inspired by coffee culture
@@ -219,7 +219,7 @@ sunrise-coffee-dashboard/
 
 ---
 
-## 📈 Data Source
+## Data Source
 
 The dashboard analyzes the **DataDNA Sunrise Coffee Chain dataset**:
 
@@ -235,18 +235,18 @@ The dashboard analyzes the **DataDNA Sunrise Coffee Chain dataset**:
 
 ---
 
-## 🔧 Performance Optimizations
+## Performance Optimizations
 
-- ✅ Client-side CSV parsing with efficient data transformation
-- ✅ Memoized computed fields to avoid redundant calculations
-- ✅ React Query caching for data persistence
-- ✅ Code splitting with React Router lazy loading
-- ✅ Optimized production build with tree shaking
-- ✅ Responsive chart rendering with Recharts
+- Client-side CSV parsing with efficient data transformation
+- Memoized computed fields to avoid redundant calculations
+- React Query caching for data persistence
+- Code splitting with React Router lazy loading
+- Optimized production build with tree shaking
+- Responsive chart rendering with Recharts
 
 ---
 
-## 🌐 Browser Support
+## Browser Support
 
 | Browser | Version |
 |---------|---------|
@@ -257,7 +257,7 @@ The dashboard analyzes the **DataDNA Sunrise Coffee Chain dataset**:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
@@ -279,7 +279,7 @@ limitations under the License.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -291,7 +291,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Gyanankur Baruah**
 - GitHub: [@Gyanankur23](https://github.com/Gyanankur23)
@@ -301,8 +301,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 <div align="center">
 
-**Built with ☕ and ❤️ for Sunrise Coffee Chain**
+**Built for Sunrise Coffee Chain**
 
-[⭐ Star this repo](https://github.com/Gyanankur23/Sunrise-Coffee-Chain-Analytics-Dashboard) • [🐛 Report Issue](https://github.com/Gyanankur23/Sunrise-Coffee-Chain-Analytics-Dashboard/issues)
+[Star this repo](https://github.com/Gyanankur23/Sunrise-Coffee-Chain-Analytics-Dashboard) • [Report Issue](https://github.com/Gyanankur23/Sunrise-Coffee-Chain-Analytics-Dashboard/issues)
 
 </div>
